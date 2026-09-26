@@ -210,6 +210,12 @@ tiempo base de aproximadamente 1.1 minutos.
 # 2. ¿Qué representa la función de pérdida?
 # Respuesta:
 
+"""
+Mide qué tan lejos están las predicciones del modelo de los tiempos reales. 
+El MSE promedia los errores al cuadrado, por lo que siempre es positivo y castiga más los errores grandes. 
+Entre menor sea, mejor se ajusta el modelo a los datos.
+
+"""
 
 # 3. ¿A qué valor debería aproximarse la derivada
 #    de x^2 en x = 3?
