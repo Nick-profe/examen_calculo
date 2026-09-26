@@ -6,6 +6,7 @@ import numpy as np
 # Nombre:
 # Apellido 1: Monsalve
 # Apellido 2: Gomez
+# Nombre : Leonardo
 # Rama: Monsalve_Gomez
 
 
