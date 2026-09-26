@@ -196,6 +196,16 @@ print(
 # 1. ¿Qué representan w y b dentro de este problema?
 # Respuesta:
 
+"""
+w es la pendiente: indica cuántos minutos aumenta el tiempo de preparación estimado por cada producto adicional
+en el pedido. 
+b es el intercepto: el tiempo estimado cuando x = 0, que se puede interpretar como un tiempo base o fijo
+de preparación (alistar el pedido, empacar, etc.).
+Con los datos del ejercicio se obtuvo w ≈ 1.99 y b ≈ 1.09: cada producto adicional agrega cerca de 2 minutos y hay un
+tiempo base de aproximadamente 1.1 minutos.
+
+"""
+
 
 # 2. ¿Qué representa la función de pérdida?
 # Respuesta:
