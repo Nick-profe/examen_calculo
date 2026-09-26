@@ -6,7 +6,7 @@ import numpy as np
 # Nombre: Dairon
 # Apellido 1: Rojas
 # Apellido 2: Muñoz
-# Rama: Rojas_Muñoz
+# Rama: Rojas_Munoz
 
 
 # 1. DATOS
