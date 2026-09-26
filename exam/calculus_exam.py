@@ -229,6 +229,12 @@ cercano (aprox. 6.00001) por usar un h pequeño pero no cero.
 
 # 4. ¿Qué representa dw?
 # Respuesta:
+"""
+Es la derivada parcial de la pérdida respecto a w (dL/dw). 
+Indica cómo cambia el error si se modifica ligeramente la pendiente, manteniendo b constante. 
+Su signo dice si conviene aumentar o disminuir w.
+
+"""
 
 
 # 5. ¿Qué representa db?
