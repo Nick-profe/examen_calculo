@@ -3,10 +3,10 @@ import numpy as np
 # EXAMEN 2
 # Cálculo aplicado a Machine Learning
 
-# Nombre:
-# Apellido 1:
-# Apellido 2:
-# Rama:
+# Nombre: Sebastian 
+# Apellido 1: Giraldo 
+# Apellido 2: Acosta
+# Rama:giraldo_acosta
 
 
 # 1. DATOS
