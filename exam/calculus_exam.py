@@ -3,10 +3,10 @@ import numpy as np
 # EXAMEN 2
 # Cálculo aplicado a Machine Learning
 
-# Nombre:
-# Apellido 1:
-# Apellido 2:
-# Rama:
+# Nombre: Juan David
+# Apellido 1: Velasco
+# Apellido 2: Otero
+# Rama: velasco_otero
 
 
 # 1. DATOS
@@ -26,16 +26,16 @@ y = data[:, 1]
 # ------------------------------------------------------------
 
 def predict(x, w, b):
-    # Completar
-    pass
+    
+    return w * x + b
 
 
 # 3. FUNCIÓN DE PÉRDIDA
 # ------------------------------------------------------------
 
 def mse_loss(y_true, y_pred):
-    # Completar
-    pass
+    
+    return np.mean((y_true - y_pred) ** 2)
 
 
 # 4. DERIVADA NUMÉRICA
@@ -50,13 +50,12 @@ def numerical_derivative(
     x,
     h=1e-5
 ):
-    # Completar
-    pass
+    return (f(x + h) - f(x)) / h
 
 # 4.1. PRUEBA DE DERIVADA NUMÉRICA
 # ------------------------------------------------------------
-# TODO: usar numerical_derivative(quadratic, 3)
-derivative_at_3 = None
+#: usar numerical_derivative(quadratic, 3)
+derivative_at_3 = numerical_derivative(quadratic, 3)
 
 print(
     "Derivada aproximada de x^2 en x=3:",
@@ -72,10 +71,12 @@ def linear_regression_gradients(
     w,
     b
 ):
-    # Completar
+    
+    n = len(x)
+    y_pred = predict(x, w, b)
 
-    dw = None
-    db = None
+    dw = (-2 / n) * np.sum(x * (y - y_pred))
+    db = (-2 / n) * np.sum(y - y_pred)
 
     return dw, db
 
@@ -90,7 +91,9 @@ def gradient_descent_step(
     b,
     learning_rate
 ):
-    # Completar
+    dw, db = linear_regression_gradients(x, y, w, b)
+    w = w - learning_rate * dw
+    b = b - learning_rate * db
 
     return w, b
 
@@ -105,10 +108,13 @@ def train_linear_regression(
     epochs=1000
 ):
 
-# TODO: entrenar el modelo y reemplazar estos valores
+#: entrenar el modelo y reemplazar estos valores
 
-    w = None
-    b = None
+    w = 0.0
+    b = 0.0
+
+    for epoch in range(epochs):
+        w, b = gradient_descent_step(x, y, w, b, learning_rate)
 
     return w, b
 
@@ -119,11 +125,11 @@ def train_linear_regression(
 initial_w = 0.0
 initial_b = 0.0
 
-# TODO: calcular la predicción inicial usando initial_w e initial_b
-initial_prediction = None
+#: calcular la predicción inicial usando initial_w e initial_b
+initial_prediction = predict(x, initial_w, initial_b)
 
-# TODO: calcular la pérdida inicial
-initial_loss = None
+#: calcular la pérdida inicial
+initial_loss = mse_loss(y, initial_prediction)
 
 
 # 9. ENTRENAMIENTO DEL MODELO
@@ -139,11 +145,11 @@ w, b = train_linear_regression(
 
 # 10. MODELO FINAL
 # ------------------------------------------------------------
-# TODO: calcular las predicciones finales
-final_prediction = None
+#: calcular las predicciones finales
+final_prediction = predict(x, w, b)
 
-# TODO: calcular la pérdida final
-final_loss = None
+#: calcular la pérdida final
+final_loss = mse_loss(y, final_prediction)
 
 
 print("Pérdida inicial:", initial_loss)
@@ -154,10 +160,10 @@ print("Valor final de b:", b)
 
 # 11. NUEVA PREDICCIÓN
 # ------------------------------------------------------------
-# TODO: predecir para x_new = 7 usando los parámetros entrenados
+# predecir para x_new = 7 usando los parámetros entrenados
 x_new = 7
 
-prediction = None
+prediction = predict(x_new, w, b)
 
 print(
     "Predicción para un pedido con 7 productos:",
