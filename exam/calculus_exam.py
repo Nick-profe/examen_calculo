@@ -221,6 +221,11 @@ Entre menor sea, mejor se ajusta el modelo a los datos.
 #    de x^2 en x = 3?
 # Respuesta:
 
+"""
+A 6, porque la derivada analítica de x^2 es 2x y 2(3) = 6. La aproximación numérica da un valor muy
+cercano (aprox. 6.00001) por usar un h pequeño pero no cero.
+
+"""
 
 # 4. ¿Qué representa dw?
 # Respuesta:
