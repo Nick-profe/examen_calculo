@@ -13,7 +13,7 @@ import numpy as np
 # ------------------------------------------------------------
 
 data = np.loadtxt(
-    "../data/order_times.csv",
+    "data/order_times.csv",
     delimiter=",",
     skiprows=1
 )
