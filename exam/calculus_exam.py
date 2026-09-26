@@ -267,6 +267,14 @@ para un pedido de 7 productos.
  
 """
 
-# 8. ¿Qué efecto tiene el learning rate
-#    durante el entrenamiento?
+# 8. ¿Qué efecto tiene el learning rate durante el entrenamiento?
 # Respuesta:
+
+"""
+Controla el tamaño de cada actualización de w y b. 
+Si es muy pequeño, el modelo avanza lento y puede no llegar al mínimo en las épocas disponibles. 
+Si es muy grande, los pasos se pasan del mínimo, la pérdida oscila o crece y el entrenamiento diverge (puede terminar en valores nan). 
+Un valor adecuado, como 0.01 en este caso, permite que la pérdida disminuya de forma estable: bajó rápido en las
+primeras 100 épocas (de 76.62 a 0.053) y luego siguió afinando w y b de forma gradual hasta 0.0186.
+
+"""
