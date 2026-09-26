@@ -190,7 +190,9 @@ print(
 
 
 # 5. ¿Qué representa db?
-# Respuesta: lo mismo pero respecto a b, el intercepto.
+# Respuesta: db es la derivada de la pérdida con respecto a b: indica cuánto cambia
+# la pérdida si se modifica un poco b, y señala la dirección y magnitud
+# en que habría que ajustar el intercepto (el tiempo base del pedido).
 
 
 # 6. ¿Por qué Gradient Descent resta el gradiente
