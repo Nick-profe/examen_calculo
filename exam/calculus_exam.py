@@ -51,7 +51,7 @@ def numerical_derivative(
     h=1e-5
 ):
 
-    return (f(x + h) - f(x)) / (h)
+    return (f(x + h) - f(x)) /  (h)
 
 # 4.1. PRUEBA DE DERIVADA NUMÉRICA
 # ------------------------------------------------------------
@@ -110,10 +110,19 @@ def train_linear_regression(
     epochs=1000
 ):
 
+ 
 # TODO: entrenar el modelo y reemplazar estos valores
 
     w = 0.0
     b = 0.0
+
+    for epoch in range(epochs): 
+        y_pred = predict(x, w, b)
+        loss = mse_loss(y, y_pred)
+        dw, db = linear_regression_gradients(x, y, w, b)
+
+        w -= learning_rate * dw
+        b -= learning_rate * db
 
     return w, b
 
