@@ -175,36 +175,39 @@ print(
 # ------------------------------------------------------------
 
 # 1. ¿Qué representan w y b dentro de este problema?
-# Respuesta:
+# Respuesta: w corresponde al tiempo adicional que suma cada producto al pedido, 
+# mientras que b representa el tiempo base que toma un pedido sin productos.
 
 
 # 2. ¿Qué representa la función de pérdida?
-# Respuesta:
+# Respuesta: la funcion de perdida en este caso representa que tan alejadas estan
+# las predicciones del modelo de los valores reales, es decir, que tan bien se ajusta el modelo a los datos.
 
 
 # 3. ¿A qué valor debería aproximarse la derivada
 #    de x^2 en x = 3?
-# Respuesta:
+# Respuesta: 6 porque la derivada de x^2 es 2x, y al evaluarla en x=3 se obtiene 2*3=6.
 
 
 # 4. ¿Qué representa dw?
-# Respuesta:
+# Respuesta: un dw representa cuanto y en que direccion cambia la perdida si se cambia el tiempo por producto adicional
 
 
 # 5. ¿Qué representa db?
-# Respuesta:
+# Respuesta: un db representa cuanto y en que direccion cambia la perdida si se cambia el tiempo base fijo de un pedido sin productos
 
 
 # 6. ¿Por qué Gradient Descent resta el gradiente
 #    en lugar de sumarlo?
-# Respuesta:
+# Respuesta: esto ocurre porque el gradiente indica la dirección de mayor aumento de la función de pérdida, por lo que para minimizar la pérdida se debe mover en la dirección opuesta al gradiente, es decir, restando el gradiente.
+# si el gradiente es positivo, significa que aumentar w o b aumentará la pérdida, por lo que se debe disminuir w o b. Si el gradiente es negativo, significa que aumentar w o b disminuirá la pérdida, por lo que se debe aumentar w o b.
 
 
 # 7. ¿Qué significa que la pérdida final sea menor
 #    que la pérdida inicial?
-# Respuesta:
+# Respuesta: significa que el modelo ha aprendido a hacer predicciones más precisas, es decir, que se ha ajustado mejor a los datos de entrenamiento y ha reducido el error en sus predicciones.
 
 
 # 8. ¿Qué efecto tiene el learning rate
 #    durante el entrenamiento?
-# Respuesta:
+# Respuesta: el learning rate determina el tamaño de los pasos que se toman en cada iteración del algoritmo de optimización. Un learning rate demasiado alto puede hacer que el modelo no converja, mientras que un learning rate demasiado bajo puede hacer que el entrenamiento sea muy lento.
