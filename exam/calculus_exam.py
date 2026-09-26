@@ -109,7 +109,7 @@ def train_linear_regression(
     x,
     y,
     learning_rate=0.001,
-    #learning_rate=0.01,
+    #learning_rate=0.1,
     epochs=1000
 ):
 
@@ -163,7 +163,7 @@ w, b = train_linear_regression(
     x,
     y,
     learning_rate=0.001,
-    #learning_rate=0.01,
+    #learning_rate=0.1,
     epochs=1000
 )
 
