@@ -246,10 +246,14 @@ Indica cómo cambia el error si se modifica ligeramente el intercepto, mantenien
 """
 
 
-# 6. ¿Por qué Gradient Descent resta el gradiente
-#    en lugar de sumarlo?
+# 6. ¿Por qué Gradient Descent resta el gradiente en lugar de sumarlo?
 # Respuesta:
+"""
+Porque el gradiente apunta en la dirección en la que la pérdida crece más rápido. Como el objetivo es
+minimizar la pérdida, hay que moverse en la dirección contraria. 
+Si se sumara, la pérdida aumentaría en cada paso.
 
+"""
 
 # 7. ¿Qué significa que la pérdida final sea menor
 #    que la pérdida inicial?
