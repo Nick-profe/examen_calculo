@@ -255,10 +255,17 @@ Si se sumara, la pérdida aumentaría en cada paso.
 
 """
 
-# 7. ¿Qué significa que la pérdida final sea menor
-#    que la pérdida inicial?
+# 7. ¿Qué significa que la pérdida final sea menor que la pérdida inicial?
 # Respuesta:
 
+"""
+Que el entrenamiento funcionó: los parámetros finales w y b producen predicciones mucho más cercanas a los
+tiempos reales que el modelo inicial (w = 0, b = 0, que predice 0 minutos para todo pedido). 
+El modelo aprendió la relación entre número de productos y tiempo de preparación.
+En este caso la pérdida pasó de 76.62 a aproximadamente 0.0186, y el modelo entrenado predice unos 15.04 minutos
+para un pedido de 7 productos.
+ 
+"""
 
 # 8. ¿Qué efecto tiene el learning rate
 #    durante el entrenamiento?
