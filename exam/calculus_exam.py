@@ -3,10 +3,10 @@ import numpy as np
 # EXAMEN 2
 # Cálculo aplicado a Machine Learning
 
-# Nombre:
-# Apellido 1:
-# Apellido 2:
-# Rama:
+# Nombre: David
+# Apellido 1: Vergara
+# Apellido 2: Tabares
+# Rama: vergara_tabares
 
 
 # 1. DATOS
@@ -26,16 +26,14 @@ y = data[:, 1]
 # ------------------------------------------------------------
 
 def predict(x, w, b):
-    # Completar
-    pass
+   return w * x + b
 
 
 # 3. FUNCIÓN DE PÉRDIDA
 # ------------------------------------------------------------
 
 def mse_loss(y_true, y_pred):
-    # Completar
-    pass
+    return np.mean((y_true - y_pred) ** 2)
 
 
 # 4. DERIVADA NUMÉRICA
@@ -50,8 +48,7 @@ def numerical_derivative(
     x,
     h=1e-5
 ):
-    # Completar
-    pass
+    return (f(x + h) - f(x - h)) / (2 * h)
 
 # 4.1. PRUEBA DE DERIVADA NUMÉRICA
 # ------------------------------------------------------------
