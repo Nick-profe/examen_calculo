@@ -183,36 +183,45 @@ print(
 # ------------------------------------------------------------
 
 # 1. ¿Qué representan w y b dentro de este problema?
-# Respuesta:
+# Respuesta: w representa la pendiente de la línea de regresión, 
+# y b representa el punto donde la línea cruza el eje y.
 
 
 # 2. ¿Qué representa la función de pérdida?
-# Respuesta:
+# Respuesta: La función de pérdida representa la medida de error 
+# entre las predicciones del modelo y los valores reales. .
 
 
 # 3. ¿A qué valor debería aproximarse la derivada
 #    de x^2 en x = 3?
-# Respuesta:
+# Respuesta: La derivada de x^2 en x = 3 debería aproximarse a 6, 
+# ya que al derivarla y al evaluarla en x = 3 obtenemos 2 * 3 = 6.
 
 
 # 4. ¿Qué representa dw?
-# Respuesta:
+# Respuesta: dw representa la derivada parcial de la
+# función de pérdida con respecto al parámetro w, 
+# indicando cómo cambia la pérdida cuando w cambia.
 
 
 # 5. ¿Qué representa db?
-# Respuesta:
+# Respuesta: db representa la derivada parcial de la 
+# función de pérdida con respecto al parámetro b, 
+# indicando cómo cambia la pérdida cuando b cambia.
 
 
 # 6. ¿Por qué Gradient Descent resta el gradiente
 #    en lugar de sumarlo?
-# Respuesta:
+# Respuesta: Gradient Descent resta el gradiente porque el gradiente 
+# indica la dirección de mayor aumento de la función de pérdida.
 
 
 # 7. ¿Qué significa que la pérdida final sea menor
 #    que la pérdida inicial?
-# Respuesta:
+# Respuesta: Significa que el modelo ha aprendido a hacer predicciones más precisas.
 
 
 # 8. ¿Qué efecto tiene el learning rate
 #    durante el entrenamiento?
-# Respuesta:
+# Respuesta: El learning rate determina el tamaño de los pasos que se dan en la dirección del gradiente 
+# durante el entrenamiento. Un learning rate demasiado alto puede hacer que el modelo no converja o diverja.
