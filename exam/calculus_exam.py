@@ -164,36 +164,39 @@ print(
 # ------------------------------------------------------------
 
 # 1. ¿Qué representan w y b dentro de este problema?
-# Respuesta:
-
+# Respuesta: w indica cuánto aumenta el tiempo de preparación por cada
+# producto adicional en el pedido, y b sería el tiempo estimado si el
+# pedido tuviera 0 productos.
 
 # 2. ¿Qué representa la función de pérdida?
-# Respuesta:
-
+# Respuesta: Mide qué tan lejos están las predicciones del modelo respecto
+# a los tiempos reales de preparación, elevando al cuadrado cada error y
+# promediando.
 
 # 3. ¿A qué valor debería aproximarse la derivada
 #    de x^2 en x = 3?
-# Respuesta:
-
+# Respuesta: A 6, ya que la derivada de x^2 es 2x, y 2*3 = 6.
 
 # 4. ¿Qué representa dw?
-# Respuesta:
-
+# Respuesta: Es la derivada parcial de la pérdida respecto a w, indica en
+# qué dirección y qué tanto hay que mover w para reducir el error.
 
 # 5. ¿Qué representa db?
-# Respuesta:
-
+# Respuesta: Es la derivada parcial de la pérdida respecto a b, indica en
+# qué dirección y qué tanto hay que mover b para reducir el error.
 
 # 6. ¿Por qué Gradient Descent resta el gradiente
 #    en lugar de sumarlo?
-# Respuesta:
-
+# Respuesta: Porque el gradiente apunta hacia donde la pérdida crece, así
+# que para reducirla hay que moverse en la dirección contraria, restando.
 
 # 7. ¿Qué significa que la pérdida final sea menor
 #    que la pérdida inicial?
-# Respuesta:
-
+# Respuesta: Que el modelo mejoró durante el entrenamiento, las
+# predicciones quedaron más cerca de los valores reales que al principio.
 
 # 8. ¿Qué efecto tiene el learning rate
 #    durante el entrenamiento?
-# Respuesta:
+# Respuesta: Controla qué tan grande es cada ajuste de w y b en cada paso;
+# muy pequeño hace que el entrenamiento sea lento, muy grande puede hacer
+# que nunca converja.
