@@ -102,17 +102,13 @@ def train_linear_regression(
     learning_rate=0.01,
     epochs=1000
 ):
-
-# TODO: entrenar el modelo y reemplazar estos valores
-
     w = 0.0
     b = 0.0
 
     for epoch in range(epochs):
         w, b = gradient_descent_step(x, y, w, b, learning_rate)
-        return w, b
 
-
+    return w, b       
 # 8. MODELO INICIAL
 # ------------------------------------------------------------
 
