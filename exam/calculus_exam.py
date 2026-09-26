@@ -251,36 +251,36 @@ print(
 # ------------------------------------------------------------
 
 # 1. ¿Qué representan w y b dentro de este problema?
-# Respuesta:
+# Respuesta: w es la pendiente del modelo y b el intercepto, es decir w cuanto cambia la predicción cuando x aumenta la unidad y b cuando x vale 0.
 
 
 # 2. ¿Qué representa la función de pérdida?
-# Respuesta:
+# Respuesta: mide el error de las predicciones respecto a los valores reales.
 
 
 # 3. ¿A qué valor debería aproximarse la derivada
 #    de x^2 en x = 3?
-# Respuesta:
+# Respuesta: debe aproximarse a 6
 
 
 # 4. ¿Qué representa dw?
-# Respuesta:
+# Respuesta: indica como cambia el error (L) cuando se modifica w.
 
 
 # 5. ¿Qué representa db?
-# Respuesta:
+# Respuesta: indica como cambia el error cuando se modifica b.
 
 
 # 6. ¿Por qué Gradient Descent resta el gradiente
 #    en lugar de sumarlo?
-# Respuesta:
+# Respuesta: porque se busca la direccion que reduzca o disminuya la perdida ya que el gradiente apunta hacia una direccion de crecimiento de la funcion.
 
 
 # 7. ¿Qué significa que la pérdida final sea menor
 #    que la pérdida inicial?
-# Respuesta:
+# Respuesta: que las predicciones se acercan mas a los valores reales
 
 
 # 8. ¿Qué efecto tiene el learning rate
 #    durante el entrenamiento?
-# Respuesta:
+# Respuesta: controla el tamaño de cada actualizacion de parametros.
