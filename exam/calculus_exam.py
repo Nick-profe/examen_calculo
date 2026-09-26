@@ -3,10 +3,10 @@ import numpy as np
 # EXAMEN 2
 # Cálculo aplicado a Machine Learning
 
-# Nombre:
-# Apellido 1:
-# Apellido 2:
-# Rama:
+# Nombre: Juan Sebastian
+# Apellido 1: Galindez
+# Apellido 2: Franco
+# Rama: Galindez_Franco
 
 
 # 1. DATOS
@@ -26,16 +26,15 @@ y = data[:, 1]
 # ------------------------------------------------------------
 
 def predict(x, w, b):
-    # Completar
-    pass
+    return w * x + b
 
 
 # 3. FUNCIÓN DE PÉRDIDA
 # ------------------------------------------------------------
 
 def mse_loss(y_true, y_pred):
-    # Completar
-    pass
+    return np.mean((y_true - y_pred) ** 2)
+
 
 
 # 4. DERIVADA NUMÉRICA
@@ -50,13 +49,13 @@ def numerical_derivative(
     x,
     h=1e-5
 ):
-    # Completar
-    pass
+
+    return (f(x + h) - f(x)) / (h)
 
 # 4.1. PRUEBA DE DERIVADA NUMÉRICA
 # ------------------------------------------------------------
 # TODO: usar numerical_derivative(quadratic, 3)
-derivative_at_3 = None
+derivative_at_3 = numerical_derivative(quadratic, 3)
 
 print(
     "Derivada aproximada de x^2 en x=3:",
@@ -72,10 +71,12 @@ def linear_regression_gradients(
     w,
     b
 ):
-    # Completar
+    n = len(x)
 
-    dw = None
-    db = None
+    y_pred = predict(x, w, b)
+
+    dw = (-2 / n) * np.sum(x * (y - y_pred))
+    db = (-2 / n) * np.sum(y - y_pred)
 
     return dw, db
 
