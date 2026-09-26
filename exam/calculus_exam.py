@@ -164,36 +164,36 @@ print(
 # ------------------------------------------------------------
 
 # 1. ¿Qué representan w y b dentro de este problema?
-# Respuesta:
+# Respuesta: w es cuánto se demora de más el pedido por cada producto adicional, o sea la pendiente de la recta. b es el tiempo base que ya tiene el pedido aunque tenga pocos productos, como el tiempo fijo de alistarlo.
 
 
 # 2. ¿Qué representa la función de pérdida?
-# Respuesta:
+# Respuesta: Es una forma de medir qué tan mal está prediciendo el modelo. Compara lo que predice con lo real, eleva la diferencia al cuadrado y saca el promedio. Entre más baja, mejor se ajusta la recta a los datos.
 
 
 # 3. ¿A qué valor debería aproximarse la derivada
 #    de x^2 en x = 3?
-# Respuesta:
+# Respuesta: A 6, porque la derivada de x² es 2x y 2 por 3 da 6. En el código da algo como 6.00001 porque es una aproximación con h muy pequeño, no el valor exacto.
 
 
 # 4. ¿Qué representa dw?
-# Respuesta:
+# Respuesta: Es cuánto cambia la pérdida cuando muevo un poquito w. Me dice hacia dónde y qué tanto debo ajustar la pendiente para bajar el error.
 
 
 # 5. ¿Qué representa db?
-# Respuesta:
+# Respuesta: Lo mismo que dw pero para b: cuánto cambia la pérdida si muevo un poquito el intercepto, y en qué dirección tengo que corregirlo.
 
 
 # 6. ¿Por qué Gradient Descent resta el gradiente
 #    en lugar de sumarlo?
-# Respuesta:
+# Respuesta: Porque el gradiente apunta hacia donde la pérdida sube más rápido, y lo que yo quiero es bajarla. Entonces me muevo en dirección contraria. Si lo sumara, el error iría aumentando en cada paso.
 
 
 # 7. ¿Qué significa que la pérdida final sea menor
 #    que la pérdida inicial?
-# Respuesta:
+# Respuesta: Que el modelo sí aprendió. Al inicio w y b son 0, así que predice 0 siempre y el error es enorme. Después del entrenamiento las predicciones quedan mucho más cerca de los tiempos reales.
 
 
 # 8. ¿Qué efecto tiene el learning rate
 #    durante el entrenamiento?
-# Respuesta:
+# Respuesta: Define qué tan grande es el paso que da el modelo en cada actualización. Si es muy pequeño, aprende muy lento. Si es muy grande, se pasa del mínimo y la pérdida puede oscilar o hasta dispararse. Con uno bien elegido, como 0.01 acá, la pérdida baja de forma estable.
