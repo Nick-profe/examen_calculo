@@ -218,38 +218,51 @@ print(
 
 # 12. PREGUNTAS DE INTERPRETACIÓN
 # ------------------------------------------------------------
-
+ 
 # 1. ¿Qué representan w y b dentro de este problema?
-# Respuesta:
-
-
+# Respuesta: w es la pendiente: indica cuánto aumenta el tiempo
+# de preparación por cada producto adicional en el pedido.
+# b es el intercepto: el tiempo estimado cuando x = 0, es decir,
+# el tiempo base de preparación de un pedido.
+ 
+ 
 # 2. ¿Qué representa la función de pérdida?
-# Respuesta:
-
-
+# Respuesta: El MSE mide qué tan alejadas están las predicciones
+# de los valores reales (promedio de los errores al cuadrado).
+# Entrenar el modelo significa reducir esta pérdida.
+ 
+ 
 # 3. ¿A qué valor debería aproximarse la derivada
 #    de x^2 en x = 3?
-# Respuesta:
-
-
+# Respuesta: A 6, porque f'(x) = 2x y f'(3) = 2(3) = 6.
+ 
+ 
 # 4. ¿Qué representa dw?
-# Respuesta:
-
-
+# Respuesta: dw es la derivada parcial de la pérdida respecto a w
+# (dL/dw). Indica cómo cambia la loss cuando se modifica w.
+ 
+ 
 # 5. ¿Qué representa db?
-# Respuesta:
-
-
+# Respuesta: db es la derivada parcial de la pérdida respecto a b
+# (dL/db). Indica cómo cambia la loss cuando se modifica b.
+ 
+ 
 # 6. ¿Por qué Gradient Descent resta el gradiente
 #    en lugar de sumarlo?
-# Respuesta:
-
-
+# Respuesta: Porque el gradiente apunta hacia la dirección de
+# crecimiento de la función. Al restarlo nos movemos en la
+# dirección contraria, lo que disminuye la loss.
+ 
+ 
 # 7. ¿Qué significa que la pérdida final sea menor
 #    que la pérdida inicial?
-# Respuesta:
-
-
+# Respuesta: Que el entrenamiento funcionó: los parámetros finales
+# representan mejor los datos y las predicciones se acercan más
+# a los tiempos reales que con el modelo inicial (w = 0, b = 0).
+ 
+ 
 # 8. ¿Qué efecto tiene el learning rate
 #    durante el entrenamiento?
-# Respuesta:
+# Respuesta: Controla el tamaño de cada actualización de los
+# parámetros. Si es muy pequeño el entrenamiento es lento; si es
+# muy grande puede volverse inestable y no converger.
