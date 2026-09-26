@@ -239,6 +239,11 @@ Su signo dice si conviene aumentar o disminuir w.
 
 # 5. ¿Qué representa db?
 # Respuesta:
+"""
+Es la derivada parcial de la pérdida respecto a b(dL/db). 
+Indica cómo cambia el error si se modifica ligeramente el intercepto, manteniendo w constante.
+
+"""
 
 
 # 6. ¿Por qué Gradient Descent resta el gradiente
